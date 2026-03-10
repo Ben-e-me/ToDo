@@ -279,8 +279,8 @@ export default function HomePage() {
                         >
                           <Checkbox
                             checked={task.isCompleted}
-                            onChange={() => handleToggleTask(task.id)}
-                            className="border-slate-700 bg-slate-950 data-[state=checked]:bg-emerald-500"
+                            onCheckedChange={() => handleToggleTask(task.id)}
+                            className="border-slate-700 bg-slate-950"
                             aria-label="Mark task active again"
                           />
                           <div className="flex-1 text-left">
